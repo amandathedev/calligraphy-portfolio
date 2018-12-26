@@ -1,77 +1,37 @@
-.sidebar {
-    grid-area: sidebar;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows: 200px 200px 200px; */
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+        'header header header header'
+        'menu main main sidebar'
+        'footer footer footer footer'
 }
 
-.sidebar2 {
-    grid-area: sidebar2;
+.grid-item {
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 20px;
 }
 
-.content {
-    grid-area: content;
-}
-
-.header {
+#item1 {
     grid-area: header;
 }
 
-.footer {
+#item2 {
+    grid-area: menu;
+}
+
+#item3 {
+    grid-area: main;
+}
+
+#item4 {
+    grid-area: sidebar;
+}
+
+#item5 {
     grid-area: footer;
-}
-
-.wrapper {
-    background-color: #fff;
-    color: #444;
-}
-
-.wrapper {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-     "header"
-     "sidebar"
-     "content"
-     "sidebar2"
-     "footer"
-  }
-
-@media only screen and (min-width: 500px)  {
-.wrapper {
-
-    grid-template-columns: 20% auto;
-    grid-template-areas:
-        "header   header"
-        "sidebar  content"
-        "sidebar2 sidebar2"
-        "footer   footer";
-    }
-}
-
-@media only screen and (min-width: 600px)   {
-    .wrapper {
-    /* grid-gap: 20px; */
-        grid-template-columns: 120px auto 120px;
-        grid-template-areas:
-        "header  header  header"
-        "sidebar content sidebar2"
-        "footer  footer  footer";
-        max-width: 1500px;
-    }
-}
-
-.box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 150%; 
-}
-
-.header,
-.footer {
-  background-color: #999;
-}
-
-.sidebar2 {
-  background-color: #ccc;
-  color: #444;
 }
