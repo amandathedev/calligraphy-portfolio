@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 1.5fr 7.5fr 0.5fr;
+    grid-template-columns: 10em auto auto 10em;
+    grid-template-rows: 1fr 5.5fr 1fr;
     grid-gap: 1px;
     padding: 1px;
     grid-template-areas:
@@ -11,7 +11,6 @@
 }
 
 .grid-item {
-    background-color: aqua;
     border: 1px solid black;
     padding: 20px;
 }
@@ -20,12 +19,46 @@
     grid-area: header;
 }
 
+#navItems {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #880000;
+}
+
+#navItems li {
+    display: inline;
+    float: left;
+}
+
+#navItems a {
+    display: block;
+    padding: 8px;
+}
+
+#navItems ul {
+    background-color: #880000;
+    text-transform: capitalize;
+}
+
 #menu {
     grid-area: menu;
 }
 
 #main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.box {
+    background-color: azure;
+    padding: 20px;
 }
 
 #sidebar {
