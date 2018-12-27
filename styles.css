@@ -36,17 +36,45 @@ body {
 }
 
 #navItems a {
-    display: block;
+    display: inline-block;
     padding: 8px;
     color: white;
-    text-align: center;
     padding: 20px 22px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
-#navItems a:hover {
+/* #navItems a:hover {
     background-color: aliceblue;
     text-decoration: none;
     color: #333;
+    text-transform: uppercase;   
+} */
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(253, 253, 253);
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    margin-left: 28px;
+    
 }
 
 #menu {
