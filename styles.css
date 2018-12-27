@@ -1,5 +1,10 @@
+body {
+    background-image: url("concrete-texture.png")
+}
+
 .grid-container {
     display: grid;
+    font-family: 'Raleway', sans-serif;
     grid-template-columns: 10em auto auto 10em;
     grid-template-rows: 1fr 5.5fr 1fr;
     grid-gap: 1px;
@@ -12,7 +17,6 @@
 
 .grid-item {
     border: 1px solid black;
-    padding: 20px;
 }
 
 #header {
@@ -23,22 +27,26 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #880000;
+    overflow: hidden;
+    background-color: #333;
 }
 
 #navItems li {
-    display: inline;
     float: left;
 }
 
 #navItems a {
     display: block;
     padding: 8px;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
 }
 
-#navItems ul {
-    background-color: #880000;
-    text-transform: capitalize;
+#navItems a:hover {
+    background-color: aliceblue;
+    text-decoration: none;
+    color: #333;
 }
 
 #menu {
@@ -57,8 +65,8 @@ img {
 }
 
 .box {
-    background-color: azure;
-    padding: 20px;
+    background-color: burlywood;
+    padding: 10px;
 }
 
 #sidebar {
@@ -74,6 +82,7 @@ a {
     grid-area: footer;
     background-color: #DADADA;
     border: none;
+    padding: 20px;
 }
 
 #footer ul {
@@ -84,6 +93,10 @@ a {
 #footer li {
     padding: 0 10px;
     list-style: none;
+}
+
+#footer a:hover {
+    text-decoration: none;
 }
 
 #footer span {
