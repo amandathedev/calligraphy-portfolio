@@ -1,5 +1,7 @@
 body {
-  background-image: url("concrete-texture.png");
+  /* background: linear-gradient(110deg, #ff9b65f0 67%, hsl(54, 100%, 69%) 60%); */
+  background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%),
+    url("concrete-texture.png");
 }
 
 .grid-container {
@@ -15,10 +17,6 @@ body {
     "footer footer footer footer";
 }
 
-/* .grid-item {
-  border: 1px solid black;
-} */
-
 #header {
   grid-area: header;
 }
@@ -32,13 +30,17 @@ body {
 }
 
 .navbar-toggler {
-    width: 1em;
-    float: right;
-    border: none;
+  width: 1em;
+  float: right;
+  border: none;
 }
 
-.navbar-toggler-icon {
-    position: fixed;
+.navbar-toggler {
+  margin-right: 40px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
 }
 
 .cool-link {
@@ -61,7 +63,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  
 }
 
 #menu {
@@ -80,19 +81,17 @@ img {
 }
 
 .box {
-  background-color: burlywood;
   padding: 10px;
 }
 
 a {
   color: #292929;
   text-decoration: none;
+  font-weight: 700;
 }
 
 #footer {
   grid-area: footer;
-  background-color: #dadada;
-  border: none;
   padding: 20px;
 }
 

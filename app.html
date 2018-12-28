@@ -27,6 +27,13 @@
       crossorigin="anonymous"
     />
 
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,700"
@@ -39,15 +46,18 @@
     <div class="grid-container">
       <div class="grid-item" id="header">
         <!-- Navbar -->
-        <nav class="navbar bg-transparent navbar-expand-sm">
+        <nav id="nav-bar" class="navbar bg-transparent navbar-expand-sm">
+          <img src="logo5.png" alt="Logo" class="navbar-brand mr-auto" />
           <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon mr-auto"><i class="fas fa-bars"></i></span>
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon mr-auto"
+              ><i class="fas fa-bars"></i
+            ></span>
           </button>
-          <img src="logo5.png" alt="Logo" class="navbar-brand mr-auto" />
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item cool-link">
@@ -74,34 +84,44 @@
             alt="Hand lettered calligraphy quote on paper with fruit"
           />
         </div>
-        <div class="box">
+        <!-- <div class="box">
           <img
             src="handLettering.jpg"
             alt="Hand lettered quote in open book on map"
           />
-        </div>
+        </div> -->
         <div class="box">
           <img
             src="digital.jpg"
             alt="Digital calligraphy drawn on iPad held by woman with stylus"
           />
         </div>
-        <div class="box">
+        <!-- <div class="box">
           <img
             src="tutorials.jpg"
             alt="Hand lettered quote on notebook with markers"
           />
-        </div>
+        </div> -->
       </div>
+
+      <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/sBoVGqiSzr4"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
       <div class="grid-item" id="footer">
         <ul>
-          <li>
-            <a href="#"> <i class="far fa-envelope"></i> Contact</a>
-          </li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Info</a></li>
+          <li class="cool-link"><a href="#">Contact</a></li>
+          <li class="cool-link"><a href="#">Privacy</a></li>
+          <li class="cool-link"><a href="#">Info</a></li>
         </ul>
-        <span>Copyright 2018, Modern Calligraphy Inc.</span>
+        <span>Copyright 2018. Modern Calligraphy, Inc.</span>
       </div>
     </div>
 
