@@ -39,6 +39,10 @@
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,700"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tangerine:400,700"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -46,13 +50,17 @@
     <div class="grid-container">
       <div class="grid-item" id="header">
         <!-- Navbar -->
-        <nav id="nav-bar" class="navbar bg-transparent navbar-expand-sm">
+        <nav
+          id="nav-bar"
+          class="navbar navbar-expand-sm fixed-top"
+        >
           <img src="logo5.png" alt="Logo" class="navbar-brand mr-auto" />
           <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#collapsibleNavbar"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon mr-auto"
               ><i class="fas fa-bars"></i
@@ -61,13 +69,13 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item cool-link">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Learn</a>
+              </li>
+              <li class="nav-item cool-link">
+                <a class="nav-link" href="#">Resources</a>
               </li>
               <li class="nav-item cool-link">
                 <a class="nav-link" href="#">Order</a>
-              </li>
-              <li class="nav-item cool-link">
-                <a class="nav-link" href="#">Learn</a>
               </li>
               <li class="nav-item cool-link">
                 <a class="nav-link" href="#">Contact</a>
@@ -76,44 +84,42 @@
           </div>
         </nav>
       </div>
-      <div class="grid-item" id="menu">Menu</div>
+      <div class="grid-item" id="menu">
+        <img src="workhard.jpg" alt="" /> <img src="believed.jpg" alt="" />
+        <img src="creativity.jpg" alt="" /> <img src="best.jpg" alt="" />
+        <img src="luckier.jpg" alt="" /> <img src="joy.jpg" alt="" />
+        <img src="perfect.jpg" alt="" />
+      </div>
       <div class="grid-item" id="main">
-        <div class="box">
+        <h1>A <strong>modern</strong> approach to beautiful writing.</h1>
+        <br />
+        <p>
+          Brush calligraphy is a craft that is a combination of hand lettering
+          and traditional calligraphy. Sometimes called 'modern calligraphy,' it
+          is a skill that almost anyone can learn with some practice.
+        </p>
+        <br />
+        <!-- <div class="box">
           <img
             src="personalized.jpg"
             alt="Hand lettered calligraphy quote on paper with fruit"
           />
         </div>
-        <!-- <div class="box">
-          <img
-            src="handLettering.jpg"
-            alt="Hand lettered quote in open book on map"
-          />
-        </div> -->
         <div class="box">
           <img
             src="digital.jpg"
             alt="Digital calligraphy drawn on iPad held by woman with stylus"
           />
         </div>
-        <!-- <div class="box">
-          <img
-            src="tutorials.jpg"
-            alt="Hand lettered quote on notebook with markers"
-          />
-        </div> -->
-      </div>
-
-      <div>
+        <div class="video-responsive">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/sBoVGqiSzr4"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        </div>
+        </div> -->
+      </div>
 
       <div class="grid-item" id="footer">
         <ul>
@@ -121,11 +127,16 @@
           <li class="cool-link"><a href="#">Privacy</a></li>
           <li class="cool-link"><a href="#">Info</a></li>
         </ul>
-        <span>Copyright 2018. Modern Calligraphy, Inc.</span>
+        <span
+          >Copyright 2018 <br />
+          Modern Calligraphy, Inc.</span
+        >
       </div>
     </div>
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript" src="index.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

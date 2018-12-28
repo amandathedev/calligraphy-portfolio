@@ -1,7 +1,6 @@
 body {
   /* background: linear-gradient(110deg, #ff9b65f0 67%, hsl(54, 100%, 69%) 60%); */
-  background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%),
-    url("concrete-texture.png");
+  background: linear-gradient(-75deg, #f7785b 40%, rgba(0, 0, 0, 0) 30%);
 }
 
 .grid-container {
@@ -12,9 +11,9 @@ body {
   grid-gap: 1px;
   padding: 1px;
   grid-template-areas:
-    "header header header header"
+    "menu header header header"
     "menu main main main"
-    "footer footer footer footer";
+    "menu footer footer footer";
 }
 
 #header {
@@ -22,11 +21,22 @@ body {
 }
 
 /* Navbar */
+nav.scrolled {
+  transition: 0.8s;
+  background-color: rgba(244, 180, 85, 0.63);
+  color: white;
+}
+
+.navbar-brand {
+  margin-left: 150px;
+}
+
 .nav-link {
   display: inline-block;
   font-size: 1em;
   letter-spacing: 1px;
   text-decoration: none;
+  margin-right: 15px;
 }
 
 .navbar-toggler {
@@ -76,6 +86,16 @@ body {
   grid-gap: 5px;
 }
 
+h1 {
+  font-family: "Tangerine", cursive;
+  text-align: center;
+  font-size: 3.8em;
+}
+
+p {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -88,6 +108,20 @@ a {
   color: #292929;
   text-decoration: none;
   font-weight: 700;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 #footer {
