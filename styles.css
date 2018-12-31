@@ -144,7 +144,7 @@ a {
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
-  position: relative;
+  /* position: relative; */
   height: 0;
 }
 .video-responsive iframe {
@@ -152,24 +152,12 @@ a {
   top: 0;
   height: 100%;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
 }
 
 /* Carousel */
-#flex {
-  display: flex;
-}
-
 .carousel {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  background-color: #8e44ad;
-  overflow-x: auto;
-  align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 10px;
+  /* display: flex; */
   -webkit-overflow-scrolling: touch;
   -webkit-scroll-snap-points-x: repeat(300px);
   -ms-scroll-snap-points-x: repeat(300px);
@@ -177,21 +165,41 @@ a {
   -webkit-scroll-snap-type: mandatory;
   -ms-scroll-snap-type: mandatory;
   scroll-snap-type: mandatory;
+  width: 100%;
 }
 
-.carousel::-webkit-scrollbar {
-  display: none;
+.slide-box {
+  display: flex;
+  justify-content: space-between;
 }
 
-.slide {
-  background-color: #fff;
-  margin: 5px;
-}
-
-.slide-image {
+.slide-box img {
   max-width: 200px;
   max-height: 200px;
-  overflow: hidden;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }
 
 /* Footer */
