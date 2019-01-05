@@ -68,6 +68,7 @@ nav.scrolled {
   text-decoration: none;
 }
 
+/* Fix */
 .nav-item:hover {
   color: white;
 }
@@ -132,6 +133,7 @@ h2 {
   height: 448px;
 }
 
+/* Fix */
 .photo:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -257,6 +259,55 @@ a {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%43000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
+/* Form */
+form {
+  max-width: 600px;
+  /* text-align: center; */
+  margin: 20px auto;
+}
+
+:placeholder-shown {
+    font-family: 'Lora', serif;
+}
+
+input,
+textarea {
+  /* border: 20; */
+  padding: 1em;
+  border-radius: 8px;
+  /* display: block; */
+  width: 100%;
+  margin-bottom: 1em;
+  
+  /* box-shadow: (0 10px 20px rgba(black, 0.1)); */
+  resize: none;
+}
+
+.half {
+  float: left;
+  width: 48%;
+}
+
+.left {
+  margin-right: 3.5%;
+}
+
+input, textarea:focus {
+  outline-color: #ec5e4e;
+  /* Fix */
+  /* -moz-outline-radius: 8px; */
+}
+
+textarea {
+  height: 212px;
+}
+
+#input-submit {
+  color: white;
+  background: #ec5e4e;
+  cursor: pointer;
+}
+
 /* Footer */
 #footer {
   grid-area: footer;
@@ -276,6 +327,7 @@ a {
 #footer a:hover {
   text-decoration: none;
   color: white;
+  font-weight: 400;
 }
 
 #footer span {

@@ -37,8 +37,8 @@
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Tangerine:400,700"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -319,6 +319,19 @@
       <!-- Contact Form -->
       <div class="container">
         <h2 id="contact">Contact Us</h2>
+        <form>
+          <div class="left half">
+            <input type="text id="input-name" placeholder="Name" required>
+            <input type="email" id="input-email" placeholder="Email Address" required>
+            <input type="text" id="input-subject" placeholder="Subject">
+          </div>
+          <div class="right half">
+            <textarea name="message" type="text" id="input-message" cols="30" rows="8" placeholder="Send us a message. We'd love to hear from you!" minlength="20"></textarea>
+          </div>
+          <a href="#">
+            <input type="submit" value="Send" id="input-submit">
+          </a>
+        </form>
       </div>
 
       <!-- Footer -->
@@ -329,7 +342,7 @@
           <li class="cool-link"><a href="#">Info</a></li>
         </ul>
         <span
-          >Copyright 2018 <br />
+          >Copyright 2019 <br />
           Modern Calligraphy, Inc.</span
         >
       </div>
