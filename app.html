@@ -188,7 +188,7 @@
           <br>
           <h2 id="learn">Learn How</h2>
           <br>
-          <div class="video-responsive embed-responsive">
+          <div id="video" class="video-responsive embed-responsive">
             <iframe class="embed-responsive-item"
               src="https://www.youtube.com/embed/sBoVGqiSzr4"
               frameborder="0"
@@ -319,17 +319,17 @@
       <!-- Contact Form -->
       <div class="container">
         <h2 id="contact">Contact Us</h2>
-        <form>
+        <form id="form">
           <div class="left half">
             <input type="text id="input-name" placeholder="Name" required>
             <input type="email" id="input-email" placeholder="Email Address" required>
             <input type="text" id="input-subject" placeholder="Subject">
           </div>
           <div class="right half">
-            <textarea name="message" type="text" id="input-message" cols="30" rows="8" placeholder="Send us a message. We'd love to hear from you!" minlength="20"></textarea>
+            <textarea name="message" type="text" id="input-message" cols="30" rows="8" placeholder="Send us a message. We'd love to hear from you!" minlength=""></textarea>
           </div>
           <a href="#">
-            <input type="submit" value="Send" id="input-submit">
+            <input type="submit" id="submit" value="Send" id="input-submit">
           </a>
         </form>
       </div>
