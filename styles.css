@@ -1,25 +1,29 @@
 /* To fix:
-Video black bars and title
 Image hover zoom within same size border
 Image not compressed on smaller screen size
-Navbar hover not blue 
-Menu extend to bottom, fit inspiration section in remaining area  */
+Menu extend to bottom, fit inspiration section in remaining area 
+Navbar toggler doesn't work 
+Media queries: menu smaller or hidden
+video black bars
+Accessibility */
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
-  background: linear-gradient(-77deg, #f7785be0 40%, rgba(0, 0, 0, 0) 30%);
+  background: linear-gradient(
+    -77deg,
+    rgba(247, 120, 91, 0.878) 40%,
+    rgba(0, 0, 0, 0) 30%
+  );
 }
 
 .grid-container {
   display: grid;
   font-family: "Cormorant Garamond", serif;
-  grid-template-columns: 10em auto;
+  grid-template-columns: 8em auto;
   grid-template-rows: 0.5fr auto 1fr 0.5fr;
-  grid-gap: 1px;
-  padding: 1px;
   grid-template-areas:
     "menu header"
     "menu main"
@@ -39,14 +43,15 @@ nav.scrolled {
 
 #menu-items {
   transition: 0.5s;
+  text-align: right;
 }
 
 .navbar-brand {
-  margin-left: 150px;
+  margin-left: 120px;
 }
 
 .nav-link {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 1em;
   letter-spacing: 1px;
   text-decoration: none;
@@ -57,14 +62,15 @@ nav.scrolled {
   width: 1em;
   float: right;
   border: none;
-}
-
-.navbar-toggler {
   margin-right: 40px;
 }
 
 .navbar-toggler:focus {
   outline: none;
+}
+
+.navbar-color {
+  background-color: rgba(250, 184, 86, 0.938) !important;
 }
 
 .cool-link {
@@ -73,10 +79,11 @@ nav.scrolled {
   text-decoration: none;
 }
 
-/* Fix */
-/* .nav-item:hover {
-  color: white;
-} */
+a {
+  color: #292929;
+  text-decoration: none;
+  font-weight: 700;
+}
 
 a:hover {
   color: rgb(247, 76, 13);
@@ -100,7 +107,7 @@ a:hover {
 /* Menu */
 #menu {
   grid-area: menu;
-  /* border-right: 1px solid lightblue; */
+  border-right: 1px solid lightblue;
 }
 
 .menu-photo {
@@ -150,17 +157,10 @@ h2 {
   -webkit-transform: scale(1.05);
 }
 
-a {
-  color: #292929;
-  text-decoration: none;
-  font-weight: 700;
-}
-
 .video-responsive {
   justify-self: center;
-  /* width: 100%; */
-  height: 30em;
-  width: 70%;
+  height: 25em;
+  width: 80%;
   position: relative;
 }
 
@@ -190,7 +190,6 @@ a {
 
 .column img {
   margin-top: 8px;
-  /* vertical-align: middle; */
   width: 100%;
 }
 
@@ -215,13 +214,9 @@ a {
   }
 }
 
-/* .grid-images {
-  width: 30%;
-} */
-
 /* Carousel */
 .carousel {
-  /* display: flex; */
+  /* Fix */
   -webkit-overflow-scrolling: touch;
   -webkit-scroll-snap-points-x: repeat(300px);
   -ms-scroll-snap-points-x: repeat(300px);
@@ -287,20 +282,14 @@ form {
 
 input,
 textarea {
-  /* border: 20; */
   padding: 1em;
   border-radius: 8px;
-  /* display: block; */
   width: 100%;
   margin-bottom: 1em;
   resize: none;
   border: 1px solid lightsalmon;
   appearance: none;
   background-color: rgba(255, 248, 248, 0.893);
-}
-
-#input-submit {
-  border: none;
 }
 
 .half {
@@ -316,18 +305,20 @@ textarea {
 input:focus,
 textarea:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px rgba(236, 94, 78, 0.721);
+  box-shadow: 0 0 0 2px rgba(236, 94, 78, 0.721);
 }
 
 textarea {
-  height: 208px;
+  height: 207px;
 }
 
-#input-submit {
+#submit {
   color: white;
   background: #ec5e4e;
   cursor: pointer;
   font-family: "Lora", serif;
+  border: none;
+  letter-spacing: 0.5px;
 }
 
 /* Footer */
@@ -339,17 +330,16 @@ textarea {
 #footer ul {
   display: flex;
   justify-content: flex-end;
+  list-style: none;
 }
 
 #footer li {
   padding: 0 10px;
-  list-style: none;
 }
 
 #footer a:hover {
   text-decoration: none;
   color: white;
-  font-weight: 400;
 }
 
 #footer span {

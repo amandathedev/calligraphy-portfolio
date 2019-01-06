@@ -55,7 +55,7 @@
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#collapsibleNavbar"
+            data-target="#menu-items"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon mr-auto"
@@ -65,7 +65,6 @@
           <div
             id="menu-items"
             class="collapse navbar-collapse"
-            id="collapsibleNavbar"
           >
             <ul class="navbar-nav ml-auto">
               <li class="nav-item cool-link">
@@ -191,7 +190,6 @@
           <div id="video" class="video-responsive embed-responsive">
             <iframe class="embed-responsive-item"
               src="https://www.youtube.com/embed/sBoVGqiSzr4"
-              frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
@@ -236,10 +234,8 @@
               </a>
               </div>
           </div>
-            <br>
           </div>
         </div>
-      </div>
 
       <!-- Carousel -->
       <div class="container">
@@ -321,16 +317,14 @@
         <h2 id="contact">Contact Us</h2>
         <form id="form">
           <div class="left half">
-            <input type="text id="input-name" placeholder="Name" required>
+            <input type="text" id="input-name" placeholder="Name" required>
             <input type="email" id="input-email" placeholder="Email Address" required>
             <input type="text" id="input-subject" placeholder="Subject">
           </div>
           <div class="right half">
-            <textarea name="message" type="text" id="input-message" cols="30" rows="8" placeholder="Send us a message. We'd love to hear from you!" minlength=""></textarea>
+            <textarea name="message" id="input-message" cols="30" rows="8" placeholder="Send us a message. We'd love to hear from you!"></textarea>
           </div>
-          <a href="#">
-            <input type="submit" id="submit" value="Send" id="input-submit">
-          </a>
+            <input type="submit" value="Send" id="submit">
         </form>
       </div>
 
@@ -346,10 +340,9 @@
           Modern Calligraphy, Inc.</span
         >
       </div>
-    </div>
 
     <!-- Optional JavaScript -->
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

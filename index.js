@@ -20,3 +20,8 @@ function scrollFunction() {
     document.getElementById("menu-items").style.fontSize = "1.2em";
   }
 }
+
+// Change navbar color on toggler click
+$(".navbar-toggler").click(function(){
+    $("nav").toggleClass("navbar-color");
+    })
