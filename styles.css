@@ -1,8 +1,7 @@
 /* To fix:
 Image hover zoom within same size border
 Image not compressed on smaller screen size
-Menu extend to bottom, fit inspiration section in remaining area 
-Navbar toggler doesn't work 
+Menu extend to bottom, fit inspiration section in remaining area  
 Media queries: menu smaller or hidden
 video black bars
 Accessibility */
@@ -23,7 +22,7 @@ body {
   display: grid;
   font-family: "Cormorant Garamond", serif;
   grid-template-columns: 8em auto;
-  grid-template-rows: 0.5fr auto 1fr 0.5fr;
+  /* grid-template-rows: 0.5fr auto 1fr 0.5fr; */
   grid-template-areas:
     "menu header"
     "menu main"
@@ -107,7 +106,7 @@ a:hover {
 /* Menu */
 #menu {
   grid-area: menu;
-  border-right: 1px solid lightblue;
+  /* border-right: 1px solid lightblue; */
 }
 
 .menu-photo {
@@ -133,7 +132,7 @@ h2 {
   font-family: "Tangerine", cursive;
   font-size: 3em;
   padding-bottom: 20px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .text {
@@ -224,17 +223,17 @@ h2 {
   -webkit-scroll-snap-type: mandatory;
   -ms-scroll-snap-type: mandatory;
   scroll-snap-type: mandatory;
-  width: 100%;
+  width: 80%;
 }
 
 .slide-box {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .slide-box img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 180px;
+  max-height: 180px;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {

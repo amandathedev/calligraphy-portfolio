@@ -12,7 +12,9 @@ $(window).scroll(function() {
 });
 
 // Change navbar font size on scroll
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction();
+};
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("menu-items").style.fontSize = "1em";
@@ -22,6 +24,6 @@ function scrollFunction() {
 }
 
 // Change navbar color on toggler click
-$(".navbar-toggler").click(function(){
-    $("nav").toggleClass("navbar-color");
-    })
+$(".navbar-toggler").click(function() {
+  $("nav").toggleClass("navbar-color");
+});
