@@ -20,7 +20,7 @@ body {
 .grid-container {
   display: grid;
   font-family: "Cormorant Garamond", serif;
-  grid-template-columns: 8em auto;
+  grid-template-columns: 0 auto;
   /* grid-template-rows: 0.5fr auto 1fr 0.5fr; */
   grid-template-areas:
     "menu header"
@@ -103,14 +103,13 @@ a:hover {
 }
 
 /* Menu */
-#menu {
+/* #menu {
   grid-area: menu;
-  /* border-right: 1px solid lightblue; */
 }
 
 .menu-photo {
   max-width: 100%;
-}
+} */
 
 /* Content */
 #main {
@@ -147,7 +146,7 @@ h2 {
     position: relative;
     width: 640px;
     height: 478px;
-    margin: 0 auto;
+    margin: 40px auto;
     /* justify-content: center;
     display: inline-block; */
     overflow: hidden;
@@ -158,14 +157,6 @@ h2 {
     top: 0;
     left: 0;
 }
-/* 
-.photo {
-    display: block;
-    max-width: 70%;
-    transition: 0.4s ease-in-out;
-    width: 600px;
-    height: 448px;
-} */
 
 .photo {
     width: 100%;
@@ -182,6 +173,7 @@ h2 {
   -webkit-transform: scale(1.05);
 }
 
+/* Video */
 .video-responsive {
   justify-self: center;
   height: 30em;
@@ -197,6 +189,7 @@ h2 {
   height: 100%;
 }
 
+/* Image Grid */
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -258,8 +251,8 @@ h2 {
 }
 
 .slide-box img {
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 240px;
+  max-height: 240px;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -297,7 +290,7 @@ h2 {
 
 /* Form */
 form {
-  max-width: 600px;
+  max-width: 800px;
   margin: 20px auto;
 }
 
